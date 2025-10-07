@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #906234;
+    --secondary-color: #a87f5d;
+    --background-color:#feead6;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.5;
+    background: var(--background-color);
+}
+a {
+    text-decoration: none;
+    color: #333;
+
+}
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Logo */
+.logo {
+    width: 250px;
+    transition: 0.5s;
+}
+.logo:hover {   
+}
+
+/*Navbar*/
+.navbar{
+    background: #f0d5bf;
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 50px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+/* Utility Classes */
+.container {
+    max-width:1100px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.container-sm {
+    max-width:800px;
+    margin: 0 auto;
+    padding: 0 10px;
+} 
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--secondary-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity:0.8;
+}
